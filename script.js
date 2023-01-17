@@ -5,7 +5,8 @@ $(document).ready(function () {
       const message = $('#chatbot-input').val();
       $.ajax({
         type: 'POST',
-        url: 'http://localhost:3000/chatbot',
+        // url: 'http://localhost:3000/chatbot',
+        url: 'https://four537-lab-2.onrender.com/chatbot',
         // url: 'https://nabil828-comp4537-w23-labs-lab2.onrender.com/chatbot',
         data: { message: message },
         success: function (response) {
